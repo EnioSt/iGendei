@@ -1,3 +1,176 @@
 @import "tailwindcss";
 
+@theme {
+  --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-background-tertiary: var(--background-tertiary);
+  --color-background-elevated: var(--background-elevated);
+  --color-background-card: var(--background-card);
+  --color-background-input: var(--background-input);
 
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-foreground-subtle: var(--foreground-subtle);
+  --color-foreground-disabled: var(--foreground-disabled);
+  --color-foreground-inverse: var(--foreground-inverse);
+
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-border-input: var(--border-input);
+  --color-border-focus: var(--border-focus);
+
+  --color-brand: var(--brand-primary);
+  --color-brand-hover: var(--brand-primary-hover);
+  --color-brand-soft: var(--brand-primary-soft);
+
+  --background-image-page-gradient: var(--gradient-page);
+  --background-image-card-gradient: var(--gradient-card);
+  --background-image-button-gradient: var(--gradient-button);
+}
+
+:root {
+  /* =========================
+     BRAND
+  ========================= */
+  --brand-primary: #6f9eff;
+  --brand-primary-hover: #5f8df2;
+  --brand-primary-soft: #9cb9ff;
+  --brand-primary-glow: rgba(111, 158, 255, 0.35);
+
+  /* =========================
+     BACKGROUNDS
+  ========================= */
+  --background: #020817;
+  --background-secondary: #06112a;
+  --background-tertiary: #0a1733;
+  --background-elevated: #0d1830;
+  --background-card: rgba(8, 18, 40, 0.88);
+  --background-input: #2a334a;
+  --background-input-hover: #313b55;
+  --background-navbar: rgba(3, 10, 24, 0.92);
+  --background-footer: #020816;
+
+  /* =========================
+     GRADIENTS
+  ========================= */
+  --gradient-page: linear-gradient(
+    90deg,
+    #0b1631 0%,
+    #04102a 50%,
+    #031126 100%
+  );
+
+  --gradient-card: linear-gradient(
+    180deg,
+    rgba(10, 20, 44, 0.95) 0%,
+    rgba(5, 14, 34, 0.98) 100%
+  );
+
+  --gradient-button: linear-gradient(90deg, #a8c1ff 0%, #6f9eff 100%);
+
+  /* =========================
+     TEXT
+  ========================= */
+  --foreground: #f8fafc;
+  --foreground-muted: #c9d2e3;
+  --foreground-subtle: #94a3b8;
+  --foreground-disabled: #64748b;
+  --foreground-inverse: #0b1220;
+  --foreground-link: #9fc0ff;
+
+  /* =========================
+     BORDERS
+  ========================= */
+  --border: rgba(148, 163, 184, 0.14);
+  --border-strong: rgba(148, 163, 184, 0.24);
+  --border-input: rgba(255, 255, 255, 0.04);
+  --border-focus: rgba(111, 158, 255, 0.55);
+
+  /* =========================
+     STATES
+  ========================= */
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --info: #60a5fa;
+
+  /* =========================
+     SHADOWS
+  ========================= */
+  --shadow-sm: 0 4px 16px rgba(0, 0, 0, 0.18);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.28);
+  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.42);
+  --shadow-glow: 0 0 30px rgba(111, 158, 255, 0.22);
+  --shadow-button: 0 10px 30px rgba(111, 158, 255, 0.18);
+
+  /* =========================
+     RADIUS
+  ========================= */
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* =========================
+     SPACING
+  ========================= */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  /* =========================
+     TYPOGRAPHY
+  ========================= */
+  --font-sans:
+    "Inter", "Manrope", "Geist", "SF Pro Display", "Segoe UI", sans-serif;
+  --font-heading: "Inter", "Manrope", "Geist", "SF Pro Display", sans-serif;
+
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-md: 18px;
+  --text-lg: 20px;
+  --text-xl: 24px;
+  --text-2xl: 32px;
+  --text-3xl: 40px;
+
+  --leading-tight: 1.1;
+  --leading-snug: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  /* =========================
+     LAYOUT
+  ========================= */
+  --container-width: 1280px;
+  --login-card-width: 520px;
+  --navbar-height: 68px;
+  --footer-height: 120px;
+
+  /* =========================
+     EFFECTS
+  ========================= */
+  --blur-sm: 8px;
+  --blur-md: 16px;
+  --blur-lg: 24px;
+
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 350ms ease;
+}
