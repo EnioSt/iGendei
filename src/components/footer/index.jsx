@@ -5,7 +5,7 @@ const Footer = () => {
       className="flex items-center justify-between px-8 min-h-[--footer-height] bg-(--background-footer)"
     >
       <p className="text-(--foreground-subtle) text-sm">
-        © 2024 iGendei Admin Systems. Precision scheduling for the digital
+        © 2026 iGendei Admin Systems. Precision scheduling for the digital
         architect.
       </p>
 
