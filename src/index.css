@@ -28,6 +28,14 @@
   --background-image-button-gradient: var(--gradient-button);
 }
 
+.header-title {
+  font-size: var(--text-xl);
+}
+
+.header-text-base {
+  font-size: var(--text-base);
+}
+
 :root {
   /* =========================
      BRAND
@@ -93,6 +101,7 @@
   --warning: #f59e0b;
   --error: #ef4444;
   --info: #60a5fa;
+  --info-hover: #0874f7;
 
   /* =========================
      SHADOWS
