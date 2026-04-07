@@ -4,6 +4,9 @@ import Input from "../../components/forms/input";
 import { MdOutlineEmail } from "react-icons/md";
 import { TbLockPassword } from "react-icons/tb";
 import { FaRegEyeSlash } from "react-icons/fa";
+import TitleForm from "../../components/forms/titleForm";
+import Logo from "../../assets/igendei_icon.PNG";
+import Button from "../../components/ui/button";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -11,6 +14,13 @@ const Login = () => {
 
   return (
     <FormLogin>
+      <div className="flex flex-col gap-4 items-center mb-6">
+        <img className="w-16 h-16" src={Logo} alt="logo da empresa" />
+        <TitleForm
+          title="Bem-vindo"
+          description="Insira suas credenciais para acessar sua conta."
+        />
+      </div>
       <Input
         label="Email"
         type="email"
@@ -44,6 +54,8 @@ const Login = () => {
           <FaRegEyeSlash />
         </button>
       </Input>
+
+      <Button>Entrar</Button>
     </FormLogin>
   );
 };
