@@ -32,6 +32,10 @@
   font-size: var(--text-xl);
 }
 
+.label-text {
+  font-size: var(--text-xs);
+}
+
 .footer-title {
   font-size: var(--text-md);
 }
@@ -89,7 +93,7 @@
   --foreground-disabled: #64748b;
   --foreground-inverse: #0b1220;
   --foreground-link: #9fc0ff;
-
+  --foreground-label: #c2c6d6;
   /* =========================
      BORDERS
   ========================= */

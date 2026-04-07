@@ -1,4 +1,4 @@
-const FormLogin = () => {
+const FormLogin = ({ children }) => {
   return (
     <>
       <section
@@ -9,7 +9,7 @@ const FormLogin = () => {
           id="page-content"
           className="mx-auto w-full max-w-(--login-card-width) rounded-(--radius-md) shadow-(--shadow-md) bg-(--background-card) p-8"
         >
-          <h2>LULA</h2>
+          {children}
         </div>
       </section>
     </>
