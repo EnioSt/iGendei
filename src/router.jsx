@@ -1,10 +1,16 @@
+import { Route, Routes } from "react-router-dom";
+import DefaultPageLogin from "./components/layout/defaultPageLogin";
+import Login from "./pages/login";
+import Register from "./pages/register";
+
 function App() {
   return (
-    <>
-      <main className="min-h-screen bg-page-gradient text-foreground font-sans">
-        <h1 className="text-red-700">iGendei</h1>
-      </main>
-    </>
+    <Routes>
+      <Route path="/" element={<DefaultPageLogin />}>
+        <Route index element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Route>
+    </Routes>
   );
 }
 

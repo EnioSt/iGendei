@@ -28,6 +28,26 @@
   --background-image-button-gradient: var(--gradient-button);
 }
 
+.header-title {
+  font-size: var(--text-xl);
+}
+
+.form-title {
+  font-size: var(--text-2xl);
+}
+
+.label-text {
+  font-size: var(--text-xs);
+}
+
+.footer-title {
+  font-size: var(--text-md);
+}
+
+.header-text-base {
+  font-size: var(--text-base);
+}
+
 :root {
   /* =========================
      BRAND
@@ -77,7 +97,7 @@
   --foreground-disabled: #64748b;
   --foreground-inverse: #0b1220;
   --foreground-link: #9fc0ff;
-
+  --foreground-label: #c2c6d6;
   /* =========================
      BORDERS
   ========================= */
@@ -93,6 +113,7 @@
   --warning: #f59e0b;
   --error: #ef4444;
   --info: #60a5fa;
+  --info-hover: #0874f7;
 
   /* =========================
      SHADOWS
