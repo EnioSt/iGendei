@@ -48,55 +48,6 @@
   font-size: var(--text-base);
 }
 
-/* =========================
-   BUTTON GRADIENT STYLES
-========================= */
-.button-gradient {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  width: 100%;
-  padding: 1rem;
-  font-size: 1.125rem;
-  font-weight: 700;
-  background: transparent;
-  border: 2px solid;
-  border-image: var(--gradient-button) 1;
-  border-radius: 18px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.button-gradient-text {
-  background: var(--gradient-button);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-weight: 700;
-  transition: color 0.3s ease-in-out;
-}
-
-.button-gradient:hover {
-  background: var(--gradient-button);
-  border-color: var(--gradient-button);
-}
-
-.button-gradient:hover .button-gradient-text {
-  background: none;
-  color: var(--background-card);
-}
-
-.button-gradient svg {
-  color: currentColor;
-  transition: color 0.3s ease-in-out;
-}
-
-.button-gradient:hover svg {
-  color: var(--background-card);
-}
-
 :root {
   /* =========================
      BRAND
