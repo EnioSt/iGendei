@@ -1,5 +1,7 @@
+import FormLogin from "../../components/forms/formLogin";
+
 const Login = () => {
-  return <h1>iGendei</h1>;
+  return <FormLogin></FormLogin>;
 };
 
 export default Login;

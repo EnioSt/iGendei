@@ -32,6 +32,10 @@
   font-size: var(--text-xl);
 }
 
+.footer-title {
+  font-size: var(--text-md);
+}
+
 .header-text-base {
   font-size: var(--text-base);
 }
