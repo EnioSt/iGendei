@@ -10,11 +10,14 @@ const Footer = () => {
             iGendei Admin Systems
           </h4>
           <p className="text-(--foreground-subtle) text-sm">
-            © 2026 | Precision scheduling for the digital architect.
+            © 2026 | Planejamento preciso para seu negocio.
           </p>
         </div>
 
-        <nav aria-label="Footer links" className="flex gap-6 text-sm">
+        <nav
+          aria-label="Footer links"
+          className="flex flex-col gap-1 text-sm sm:flex-row sm:gap-6"
+        >
           <a
             href="#"
             className="text-(--foreground-link) hover:text-(--info-hover)"

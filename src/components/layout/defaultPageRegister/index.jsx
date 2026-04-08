@@ -2,15 +2,15 @@ import { Outlet, useNavigate } from "react-router-dom";
 import Header from "../../header";
 import Footer from "../../footer";
 
-const DefaultPageLogin = () => {
+const DefaultPageRegister = () => {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen flex flex-col bg-(--background)">
       <Header
-        link="Sing up"
-        paragraph="Novo por aqui?"
-        onClick={() => navigate("/register")}
+        link="Login"
+        paragraph="Ja tem uma conta?"
+        onClick={() => navigate("/")}
       />
 
       <main
@@ -25,4 +25,4 @@ const DefaultPageLogin = () => {
   );
 };
 
-export default DefaultPageLogin;
+export default DefaultPageRegister;

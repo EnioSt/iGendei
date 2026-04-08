@@ -35,7 +35,7 @@ const Login = () => {
       />
       <Input
         id="password"
-        label="PASSWORD"
+        label="Senha"
         type="password"
         placeholder="••••••••••••••••"
         value={password}
