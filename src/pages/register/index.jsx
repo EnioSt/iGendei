@@ -1,5 +1,5 @@
 import FormRegister from "../../components/forms/formRegister";
-import LogoText from "../../assets/logo_text.PNG";
+import LogoText from "../../assets/logo_text2.PNG";
 import TitleForm from "../../components/forms/titleForm";
 import Input from "../../components/forms/input";
 import { useState } from "react";
@@ -16,14 +16,23 @@ const Register = () => {
   const [password, setPassword] = useState("");
 
   return (
-    <div className="flex items-center gap-10">
-      <img className="w-[800px] h-[430px]" src={LogoText} alt="" />
-      <FormRegister>
+    <div className="flex flex-col lg:flex-row items-center gap-10">
+      <img
+        className="
+    w-[280px] h-[130px]        
+    md:w-[400px] md:h-[180px] 
+    xl:w-[500px] xl:h-[300px]  
+    2xl:w-[600px] 2xl:h-[300px]  
+  "
+        src={LogoText}
+        alt=""
+      />
+      <FormRegister className="w-full max-w-[500px]">
         <TitleForm
           title="Crie sua conta!"
           description="Cadastre corretamente seus dados."
         />
-        <div className="flex gap-8 mt-8 ">
+        <div className="flex flex-col md:flex-col lg:flex-row gap-8 mt-8">
           <Input
             label="Nome completo"
             type="text"

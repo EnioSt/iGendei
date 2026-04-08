@@ -14,7 +14,10 @@ const Footer = () => {
           </p>
         </div>
 
-        <nav aria-label="Footer links" className="flex gap-6 text-sm">
+        <nav
+          aria-label="Footer links"
+          className="flex flex-col gap-1 text-sm sm:flex-row sm:gap-6"
+        >
           <a
             href="#"
             className="text-(--foreground-link) hover:text-(--info-hover)"
