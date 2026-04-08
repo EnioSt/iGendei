@@ -1,5 +1,3 @@
-import DefaultPageRegister from "../../layout/defaultPageRegister";
-
 const FormRegister = ({ children }) => {
   return (
     <section

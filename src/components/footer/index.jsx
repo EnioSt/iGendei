@@ -10,7 +10,7 @@ const Footer = () => {
             iGendei Admin Systems
           </h4>
           <p className="text-(--foreground-subtle) text-sm">
-            © 2026 | Precision scheduling for the digital architect.
+            © 2026 | Planejamento preciso para seu negocio.
           </p>
         </div>
 
