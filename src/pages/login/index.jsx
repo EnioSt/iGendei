@@ -7,10 +7,12 @@ import { FaRegEyeSlash } from "react-icons/fa";
 import TitleForm from "../../components/forms/titleForm";
 import Logo from "../../assets/igendei_icon.PNG";
 import Button from "../../components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   return (
     <FormLogin>
@@ -55,7 +57,7 @@ const Login = () => {
         </button>
       </Input>
 
-      <Button>Entrar</Button>
+      <Button onClick={() => navigate("/dashboard")}>Entrar</Button>
     </FormLogin>
   );
 };

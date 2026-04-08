@@ -3,6 +3,7 @@ import DefaultPageLogin from "./components/layout/defaultPageLogin";
 import Login from "./pages/login";
 import Register from "./pages/register";
 import DefaultPageRegister from "./components/layout/defaultPageRegister";
+import Sidebar from "./components/layout/sidebar";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/register" element={<DefaultPageRegister />}>
         <Route index element={<Register />} />
       </Route>
+      <Route path="/dashboard" element={<Sidebar />} />
     </Routes>
   );
 }
