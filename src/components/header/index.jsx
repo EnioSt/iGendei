@@ -1,7 +1,4 @@
-import { useNavigate } from "react-router-dom";
-
-const Header = () => {
-  const navigate = useNavigate();
+const Header = ({ paragraph, link, ...props }) => {
   return (
     <header className="flex items-center justify-between px-8 min-h-[68px] bg-(--background-navbar)">
       <h1 className="header-title text-(--foreground) font-(--weight-bold)">
@@ -12,12 +9,12 @@ const Header = () => {
         aria-label="User actions"
         className="flex items-center gap-6 header-text-base"
       >
-        <p className="text-(--foreground-subtle)">Novo por aqui?</p>
+        <p className="text-(--foreground-subtle)">{paragraph}</p>
         <a
-          onClick={() => navigate("/register")}
+          {...props}
           className="text-(--info) font-(--weight-medium) cursor-pointer hover:text-(--info-hover)"
         >
-          Sign up
+          {link}
         </a>
       </nav>
     </header>

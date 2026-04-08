@@ -1,0 +1,17 @@
+* [33m696ddc3[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/feat/page-login[m[33m, [m[1;32mfeat/page-login[m[33m)[m finalizando a tela de login
+* [33md3ab347[m finalizando o botão do login
+* [33m6993b58[m finalizando os estilos dos inputs
+* [33mb7dc338[m finalizando os inputs da tela de login
+* [33mb168637[m customizando o form da page de login
+* [33m4e58745[m iniciando o form da page de login
+* [33m11aa309[m finalizando alguns ajustes do footer da page de login
+* [33m228a572[m melhorando a pagina padrão
+* [33m05ed693[m finalizando o componente footer
+* [33m5527817[m finalizando o header e iniciando a pagina padrao
+* [33mc999fb3[m iniciando a pagina login
+* [33m2b2b4e0[m[33m ([m[1;31morigin/feat/variaveis-css[m[33m, [m[1;32mfeat/variaveis-css[m[33m)[m finalizando as variaveis da tela de login, testando e executando
+*   [33m88beb78[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #1 from EnioSt/feat/arquitetura-inicial
+[32m|[m[33m\[m  
+[32m|[m * [33mab67dc5[m[33m ([m[1;31morigin/feat/arquitetura-inicial[m[33m)[m iniciando a arquitetura do projeto
+[32m|[m[32m/[m  
+* [33mce05854[m primeiro commit do igendei
