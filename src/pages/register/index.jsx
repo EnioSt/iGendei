@@ -19,15 +19,15 @@ const Register = () => {
     <div className="flex flex-col lg:flex-row items-center gap-10">
       <img
         className="
-    w-[280px] h-[130px]        
-    md:w-[400px] md:h-[180px] 
-    xl:w-[500px] xl:h-[300px]  
-    2xl:w-[600px] 2xl:h-[300px]  
+    w-70 h-32.5        
+    md:w-100 md:h-45 
+    xl:w-125 xl:h-75  
+    2xl:w-150 2xl:h-75  
   "
         src={LogoText}
         alt=""
       />
-      <FormRegister className="w-full max-w-[500px]">
+      <FormRegister className="w-full max-w-125">
         <TitleForm
           title="Crie sua conta!"
           description="Cadastre corretamente seus dados."
