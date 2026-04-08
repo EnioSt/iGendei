@@ -22,7 +22,7 @@ const Sidebar = () => {
       {!open && (
         <div className="md:hidden p-4">
           <button onClick={() => setOpen(true)}>
-            <RxHamburgerMenu className="h-6 w-6" />
+            <RxHamburgerMenu className="h-6 w-6 text-(--foreground)" />
           </button>
         </div>
       )}
@@ -43,7 +43,7 @@ const Sidebar = () => {
 
           {/* Botão de fechar só aparece em telas menores */}
           <button onClick={() => setOpen(false)} className="md:hidden">
-            <IoMdClose className="h-6 w-6 text-amber-50" />
+            <IoMdClose className="h-6 w-6 text-(--foreground)" />
           </button>
         </div>
 
