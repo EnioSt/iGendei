@@ -64,7 +64,7 @@
   --background-secondary: #06112a;
   --background-tertiary: #0a1733;
   --background-elevated: #0d1830;
-  --background-card: rgba(8, 18, 40, 0.88);
+  --background-card: #131b2e;
   --background-input: #2a334a;
   --background-input-hover: #313b55;
   --background-navbar: rgba(3, 10, 24, 0.92);
@@ -98,6 +98,7 @@
   --foreground-inverse: #0b1220;
   --foreground-link: #9fc0ff;
   --foreground-label: #c2c6d6;
+  --card: #4cd7f6;
   /* =========================
      BORDERS
   ========================= */
