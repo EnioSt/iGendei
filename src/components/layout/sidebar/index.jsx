@@ -2,6 +2,8 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { IoMdClose } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
+import TitleForm from "../../forms/titleForm";
+import NavLinkCustom from "../../ui/link";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
@@ -34,8 +36,9 @@ const Sidebar = () => {
         {/* Header com botão de fechar no mobile */}
         <div className="flex items-center justify-between p-6 border-b border-gray-700">
           <div>
-            <h1 className="text-xl font-bold">SchedulePro</h1>
-            <p className="text-sm text-gray-400">Management Suite</p>
+            {/* <h1 className="text-xl font-bold">SchedulePro</h1>
+            <p className="text-sm text-gray-400">Management Suite</p> */}
+            <TitleForm title="Corporação XYZ" description="José da Silva" />
           </div>
 
           {/* Botão de fechar só aparece em telas menores */}
@@ -47,25 +50,13 @@ const Sidebar = () => {
         {/* Links */}
         <nav className="mt-6 flex flex-col space-y-2">
           {navItems.map((item) => (
-            <NavLink
-              key={item.name}
-              to={item.path}
-              className={({ isActive }) =>
-                `px-6 py-2 rounded-md transition-colors ${
-                  isActive
-                    ? "bg-gray-700 text-white"
-                    : "text-gray-300 hover:bg-gray-800"
-                }`
-              }
-            >
-              {item.name}
-            </NavLink>
+            <NavLinkCustom key={item.name} name={item.name} path={item.path} />
           ))}
         </nav>
 
         {/* Rodapé */}
         <div className="absolute bottom-0 w-full p-6 border-t border-gray-700">
-          <p className="text-sm text-gray-400">Empresa XYZ</p>
+          <p className="text-sm text-gray-400">iGendei</p>
         </div>
       </aside>
     </>
