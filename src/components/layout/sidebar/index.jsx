@@ -10,10 +10,10 @@ const Sidebar = () => {
 
   const navItems = [
     { name: "Dashboard", path: "/dashboard" },
-    { name: "Appointments", path: "/appointments" },
-    { name: "Customers", path: "/customers" },
-    { name: "Analytics", path: "/analytics" },
-    { name: "Settings", path: "/settings" },
+    { name: "Agendamentos", path: "/appointments" },
+    { name: "Clientes", path: "/customers" },
+    { name: "Pagamentos", path: "/paymentes" },
+    { name: "Configurações", path: "/settings" },
   ];
 
   return (

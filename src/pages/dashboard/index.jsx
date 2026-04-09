@@ -1,4 +1,4 @@
-import TitleForm from "../../components/forms/titleForm";
+import TitleForm, { TitleCard } from "../../components/forms/titleForm";
 import AppointCard from "../../components/ui/appointCard";
 import Button from "../../components/ui/button";
 import Card from "../../components/ui/card";
@@ -8,7 +8,7 @@ const Dashboard = () => {
   return (
     <>
       <header className="flex flex-col items-center mb-4 md:mb-6 lg:items-start">
-        <TitleForm
+        <TitleCard
           title="Dashboard"
           description="Olá, aqui está seu resumo operacional."
         />
