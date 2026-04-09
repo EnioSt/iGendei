@@ -10,19 +10,19 @@ const Sidebar = () => {
 
   const navItems = [
     { name: "Dashboard", path: "/dashboard" },
-    { name: "Appointments", path: "/appointments" },
-    { name: "Customers", path: "/customers" },
-    { name: "Analytics", path: "/analytics" },
-    { name: "Settings", path: "/settings" },
+    { name: "Agendamentos", path: "/appointments" },
+    { name: "Clientes", path: "/customers" },
+    { name: "Pagamentos", path: "/paymentes" },
+    { name: "Configurações", path: "/settings" },
   ];
 
   return (
     <>
       {/* Botão Hamburger - Mobile */}
       {!open && (
-        <div className="md:hidden p-4">
+        <div className="xl:hidden p-4">
           <button onClick={() => setOpen(true)}>
-            <RxHamburgerMenu className="h-6 w-6" />
+            <RxHamburgerMenu className="h-6 w-6 text-(--foreground)" />
           </button>
         </div>
       )}
@@ -31,7 +31,7 @@ const Sidebar = () => {
       <aside
         className={`fixed top-0 left-0 h-full w-64 bg-gray-900 text-white transform 
         ${open ? "translate-x-0" : "-translate-x-full"} 
-        md:translate-x-0 transition-transform duration-200 ease-in-out`}
+        xl:translate-x-0 transition-transform duration-200 ease-in-out`}
       >
         {/* Header com botão de fechar no mobile */}
         <div className="flex items-center justify-between p-6 border-b border-gray-700">
@@ -42,8 +42,8 @@ const Sidebar = () => {
           </div>
 
           {/* Botão de fechar só aparece em telas menores */}
-          <button onClick={() => setOpen(false)} className="md:hidden">
-            <IoMdClose className="h-6 w-6 text-amber-50" />
+          <button onClick={() => setOpen(false)} className="xl:hidden">
+            <IoMdClose className="h-6 w-6 text-(--foreground)" />
           </button>
         </div>
 
