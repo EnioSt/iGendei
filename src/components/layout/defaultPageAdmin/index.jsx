@@ -5,21 +5,21 @@ const DefaultPageAdmin = () => {
   return (
     <div className="min-h-screen flex bg-(--background)">
       {/* Sidebar */}
-      <div className="hidden md:block w-64">
+      <div className="hidden xl:block w-64">
         <Sidebar />
       </div>
 
       {/* Área principal */}
       <div className="flex flex-1 flex-col">
         {/* Header */}
-        <header className="">
+        <header className="block xl:hidden">
           <Sidebar />
         </header>
 
         {/* Conteúdo principal */}
         <main
           role="main"
-          className="flex-1 px-4 py-4 bg-(--background-secondary)"
+          className="flex-1 px-4 py-6 bg-(--background-secondary)"
         >
           <Outlet />
         </main>
