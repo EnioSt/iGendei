@@ -99,13 +99,16 @@
   --foreground-link: #9fc0ff;
   --foreground-label: #c2c6d6;
   --card: #4cd7f6;
+  --bg-money: #06ee5b;
+  --card-money: #32d16c;
   --card-pendente: #e5f503;
   --card-cancelado: #f31515;
   --bg-span-confirmado: #105663;
   --bg-span-pendente: #979c4b;
   --bg-span-cancelado: #773636;
+  --bg-span-money: #1b6637;
   /* =========================
-     BORDERS
+  BORDERS
   ========================= */
   --border: rgba(148, 163, 184, 0.14);
   --border-strong: rgba(148, 163, 184, 0.24);
@@ -113,7 +116,7 @@
   --border-focus: rgba(111, 158, 255, 0.55);
 
   /* =========================
-     STATES
+  STATES
   ========================= */
   --success: #22c55e;
   --warning: #f59e0b;

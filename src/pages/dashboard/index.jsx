@@ -1,8 +1,10 @@
+import { FaRegCalendarCheck, FaUserTimes } from "react-icons/fa";
 import TitleForm, { TitleCard } from "../../components/forms/titleForm";
 import AppointCard from "../../components/ui/appointCard";
 import Button from "../../components/ui/button";
 import Card from "../../components/ui/card";
 import WeeklySummaryCard from "../../components/ui/weeklySummaryCard";
+import { FaMoneyBillTrendUp } from "react-icons/fa6";
 
 const Dashboard = () => {
   return (
@@ -15,9 +17,30 @@ const Dashboard = () => {
       </header>
 
       <div className="flex flex-col gap-4 justify-center items-center md:flex-row lg:justify-start ">
-        <Card />
-        <Card />
-        <Card />
+        <Card
+          icon={<FaRegCalendarCheck />}
+          color="--card"
+          bg="--background-input"
+          label="+12% hoje"
+          description="Reservas de hoje:"
+          indicator="42"
+        />
+        <Card
+          icon={<FaMoneyBillTrendUp />}
+          color="--card-money"
+          bg="--background-input"
+          label="+R$ 1.200,00"
+          description="Receitas acumuladas (mês):"
+          indicator="R$ 18.450,00"
+        />
+        <Card
+          icon={<FaUserTimes />}
+          color="--card-cancelado"
+          bg="--background-input"
+          label="-2.1% vs anterior"
+          description="Taxa de ausência (mês):"
+          indicator="4.8%"
+        />
       </div>
 
       <div className="mt-4 flex flex-col gap-4 justify-center items-center md:flex-row lg:justify-start ">
