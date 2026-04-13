@@ -12,7 +12,7 @@ const Sidebar = () => {
     { name: "Dashboard", path: "/dashboard" },
     { name: "Agendamentos", path: "/appointments" },
     { name: "Clientes", path: "/customers" },
-    { name: "Pagamentos", path: "/paymentes" },
+    { name: "Pagamentos", path: "/payments" },
     { name: "Configurações", path: "/settings" },
   ];
 
