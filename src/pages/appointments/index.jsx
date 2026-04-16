@@ -54,7 +54,48 @@ const Appointments = () => {
       description: "Quadra Central",
       status: "Confirmado",
     },
-
+    {
+      date: new Date(2026, 3, 14, 9, 0),
+      hour: "09:00",
+      title: "Consulta Médica",
+      description: "Clínica Saúde",
+      status: "Confirmado",
+    },
+    {
+      date: new Date(2026, 3, 14, 11, 0),
+      hour: "11:00",
+      title: "Reunião de Projeto",
+      description: "Equipe Alpha",
+      status: "Pendente",
+    },
+    {
+      date: new Date(2026, 3, 14, 14, 0),
+      hour: "14:00",
+      title: "Treino de Vôlei",
+      description: "Quadra Central",
+      status: "Confirmado",
+    },
+    {
+      date: new Date(2026, 3, 14, 14, 0),
+      hour: "14:00",
+      title: "Treino de Vôlei",
+      description: "Quadra Central",
+      status: "Confirmado",
+    },
+    {
+      date: new Date(2026, 3, 14, 16, 0),
+      hour: "16:00",
+      title: "Revisão de Código",
+      description: "Dev Team",
+      status: "Cancelado",
+    },
+    {
+      date: new Date(2026, 3, 14, 18, 0),
+      hour: "18:00",
+      title: "Apresentação Comercial",
+      description: "Cliente Beta",
+      status: "Confirmado",
+    },
     {
       date: new Date(2026, 3, 15, 16, 45), // 15 Abril 2026
       hour: "16:45",

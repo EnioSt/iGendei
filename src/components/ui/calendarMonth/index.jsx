@@ -1,3 +1,5 @@
+import CalendarMonthCell from "../../forms/calendarMonthCell";
+
 const CalendarMonth = ({ currentDate, events }) => {
   const startOfMonth = new Date(
     currentDate.getFullYear(),
@@ -30,34 +32,12 @@ const CalendarMonth = ({ currentDate, events }) => {
     );
 
     cells.push(
-      <div
+      <CalendarMonthCell
         key={i}
-        className={`border border-(--border) p-2 h-24 overflow-hidden ${
-          isCurrentMonth
-            ? "bg-(--background-card)"
-            : "bg-(--background-tertiary)"
-        }`}
-      >
-        <p className="text-xs text-(--foreground-subtle)">
-          {isCurrentMonth ? dayNum : ""}
-        </p>
-        <div className="flex flex-col gap-1 mt-1">
-          {dayEvents.map((ev, idx) => (
-            <span
-              key={idx}
-              className={`text-xs rounded px-1 ${
-                ev.status === "Confirmado"
-                  ? "bg-(--bg-span-confirmado) text-(--foreground)"
-                  : ev.status === "Pendente"
-                    ? "bg-(--bg-span-pendente) text-(--foreground)"
-                    : "bg-(--bg-span-cancelado) text-(--foreground)"
-              }`}
-            >
-              {ev.title}
-            </span>
-          ))}
-        </div>
-      </div>,
+        date={date}
+        dayEvents={dayEvents}
+        isCurrentMonth={isCurrentMonth}
+      />,
     );
   }
 
