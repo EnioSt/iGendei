@@ -15,7 +15,7 @@ const CalendarWeek = ({ currentDate, events }) => {
           (ev) => ev.date.toDateString() === day.toDateString(),
         );
         return (
-          <div key={idx} className="border border-(--border) p-2 h-64">
+          <div key={idx} className="border border-(--border) p-2 h-100.5">
             <p className="text-sm text-(--foreground-subtle)">
               {day.toLocaleDateString("pt-BR", {
                 weekday: "short",
