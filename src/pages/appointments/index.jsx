@@ -8,11 +8,17 @@ const Appointments = () => {
   const [date, setDate] = useState(new Date());
 
   // Função para formatar mês/ano
+  const capitalizeFirst = (str) => {
+    if (!str) return "";
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  };
+
   const formatMonthYear = (date) => {
-    return date.toLocaleDateString("pt-BR", {
+    const formatted = date.toLocaleDateString("pt-BR", {
       month: "long",
       year: "numeric",
     });
+    return capitalizeFirst(formatted);
   };
 
   // Navegação entre períodos
@@ -138,7 +144,7 @@ const Appointments = () => {
       {/* Header */}
       <header className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
         {/* Título dinâmico */}
-        <h2 className="form-title text-(--foreground)">
+        <h2 className="text-center form-title text-(--foreground)">
           {view === "day"
             ? date.toLocaleDateString("pt-BR", {
                 day: "numeric",
