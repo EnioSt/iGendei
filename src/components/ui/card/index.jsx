@@ -1,12 +1,18 @@
 import { FaRegCalendarCheck } from "react-icons/fa";
 
-const Card = ({ icon, label, description, indicator, color, bg }) => {
+const Card = ({ icon, label, description, indicator, cor, bg }) => {
   return (
     <div className="w-72 md:w-58 h-42 bg-(--background-card) rounded-lg lg:w-74.5 lg:h-42 2xl:w-1/3 ">
       <article className="p-6">
         <div className="flex flex-col gap-3">
-          <div className={`text-(${color}) flex justify-between`}>
-            <span className={`bg-(${bg}) p-3 rounded-sm`}>
+          <div
+            className="flex justify-between"
+            style={{ color: `var(${cor})` }}
+          >
+            <span
+              className="p-3 rounded-sm"
+              style={{ backgroundColor: `var(${bg})` }}
+            >
               {/* <FaRegCalendarCheck /> */}
               {icon}
             </span>
