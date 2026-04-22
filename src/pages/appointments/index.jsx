@@ -227,7 +227,7 @@ const Appointments = () => {
       </header>
 
       {/* Main (aqui você renderiza o calendário conforme o filtro) */}
-      <main className="bg-(--background-card) rounded-lg p-6 min-h-112.5">
+      <main className="bg-(--background-card) rounded-lg p-6 min-h-[60vh] lg:min-h-[70vh]">
         {view === "month" && (
           <CalendarMonth currentDate={date} events={events} />
         )}

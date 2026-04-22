@@ -4,7 +4,7 @@ const CalendarDay = ({ currentDate, events }) => {
   );
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2 overflow-y-auto max-h-[calc(60vh-6rem)] lg:max-h-[calc(70vh-6rem)] pr-1">
       {dayEvents.length === 0 ? (
         <p className="text-(--foreground-subtle)">Nenhum agendamento hoje.</p>
       ) : (
@@ -27,7 +27,7 @@ const CalendarDay = ({ currentDate, events }) => {
         ))
       )}
     </div>
-  );
+  ); 
 };
 
 export default CalendarDay;

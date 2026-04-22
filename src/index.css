@@ -30,6 +30,9 @@
   --money: var(--card-money);
 }
 
+.overflow-y-auto::-webkit-scrollbar { width: 4px; }
+.overflow-y-auto::-webkit-scrollbar-thumb { background: var(--foreground-subtle); border-radius: 2px; }
+
 .header-title {
   font-size: var(--text-xl);
 }
