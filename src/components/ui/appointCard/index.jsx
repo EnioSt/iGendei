@@ -53,10 +53,10 @@ const AppointCard = () => {
     },
   ];
   return (
-    <div className="w-72  md:w-120 h-109 bg-(--background-card) rounded-lg lg:w-153 lg:h-109 2xl:w-2/3 2xl:h-146">
-      <article className="p-8">
+    <div className="w-full md:w-120 lg:w-153 2xl:w-2/3 bg-(--background-card) rounded-lg flex flex-col max-h-109 lg:max-h-[480px] 2xl:max-h-146">
+      <article className="p-8 flex flex-col flex-1 min-h-0">
         <TitleCard title="Próximos Agendamentos" />
-        <div className="flex flex-col gap-4 mt-4 max-h-70 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent">
+        <div className="flex flex-col gap-4 mt-4 flex-1 min-h-0 overflow-y-auto">
           {appointments.map((item, index) => (
             <AppointList key={index} {...item} />
           ))}

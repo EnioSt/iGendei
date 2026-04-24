@@ -19,8 +19,8 @@ const WeeklySummaryCard = () => {
   const today = days[todayIndex].label;
 
   return (
-    <div className="w-72 md:w-58 h-109 bg-(--background-card) rounded-lg lg:w-74.5 lg:h-109 2xl:w-1/3 2xl:h-146">
-      <article className="p-6 flex flex-col h-full">
+    <div className="w-72 md:w-58 lg:w-74.5 2xl:w-1/3 bg-(--background-card) rounded-lg flex flex-col">
+      <article className="p-6 flex flex-col flex-1">
         {/* Header */}
         <header>
           <TitleCard
@@ -39,19 +39,16 @@ const WeeklySummaryCard = () => {
             return (
               <div
                 key={day.label}
-                className="flex flex-col items-center flex-1 min-w-0"
-              >
+                className="flex flex-col items-center flex-1 min-w-0">
                 <div
                   className={`w-full rounded-t-md transition-all duration-300 flex items-center justify-center text-xs text-white
             ${day.label === today ? "bg-(--bg-span-confirmado)" : "bg-gray-400"}`}
-                  style={{ height: `${height}px` }}
-                >
+                  style={{ height: `${height}px` }}>
                   <span className="opacity-80 font-bold">{day.value}</span>
                 </div>
                 <span
                   className={`mt-2 text-xs md:text-sm font-semibold 
-            ${day.label === today ? "text-(--card)" : "text-gray-300"}`}
-                >
+            ${day.label === today ? "text-(--card)" : "text-gray-300"}`}>
                   {day.label}
                 </span>
               </div>

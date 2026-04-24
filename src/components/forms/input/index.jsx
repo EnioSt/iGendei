@@ -52,4 +52,39 @@ const Input = ({
   );
 };
 
+export const InputSecondary = ({
+  label,
+  type = "text",
+  placeholder,
+  value,
+  onChange,
+  icon,
+  children,
+}) => {
+  return (
+    <div className="flex flex-col gap-1.5 w-full">
+      {label && (
+        <label className="label-text font-medium text-(--foreground-label) uppercase tracking-wide">
+          {label}
+        </label>
+      )}
+      <div className="flex items-center gap-3 px-4 py-3 rounded-(--radius-sm) border border-(--border-input) bg-(--background-input) transition-all duration-(--transition-fast) focus-within:border-(--border-focus) focus-within:bg-(--background-input-hover)">
+        {icon && (
+          <span className="text-(--foreground-subtle) text-base flex-shrink-0">
+            {icon}
+          </span>
+        )}
+        <input
+          type={type}
+          placeholder={placeholder}
+          value={value}
+          onChange={onChange}
+          className="flex-1 bg-transparent outline-none text-(--foreground) placeholder:text-(--foreground-disabled) text-sm"
+        />
+        {children}
+      </div>
+    </div>
+  );
+};
+
 export default Input;
