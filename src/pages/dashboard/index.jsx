@@ -42,7 +42,7 @@ const Dashboard = () => {
         />
       </div>
 
-      <div className="mt-4 flex flex-col gap-4 justify-center items-center md:flex-row lg:justify-start ">
+      <div className="mt-4 flex flex-col gap-4 justify-center items-center md:flex-row md:items-stretch lg:justify-start">
         <AppointCard />
         <WeeklySummaryCard />
       </div>
