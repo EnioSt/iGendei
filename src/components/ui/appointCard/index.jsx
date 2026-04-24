@@ -1,55 +1,55 @@
-import AppointList from "../../forms/appointList";
-import TitleForm, { TitleCard } from "../../forms/titleForm";
+import AppointList from '../../forms/appointList';
+import TitleForm, { TitleCard } from '../../forms/titleForm';
 
 const AppointCard = () => {
   const appointments = [
     {
-      name: "John Doe",
-      hour: "09:00",
-      appoint: "Quadra de Vôlei",
-      status: "Confirmado",
+      name: 'John Doe',
+      hour: '09:00',
+      appoint: 'Quadra de Vôlei',
+      status: 'Confirmado',
     },
     {
-      name: "Jane Smith",
-      hour: "10:30",
-      appoint: "Quadra de Tênis",
-      status: "Pendente",
+      name: 'Jane Smith',
+      hour: '10:30',
+      appoint: 'Quadra de Tênis',
+      status: 'Pendente',
     },
     {
-      name: "Lula da Silva",
-      hour: "11:00",
-      appoint: "Quadra de Futebol",
-      status: "Cancelado",
+      name: 'Lula da Silva',
+      hour: '11:00',
+      appoint: 'Quadra de Futebol',
+      status: 'Cancelado',
     },
     {
-      name: "Maria Oliveira",
-      hour: "12:00",
-      appoint: "Piscina",
-      status: "Confirmado",
+      name: 'Maria Oliveira',
+      hour: '12:00',
+      appoint: 'Piscina',
+      status: 'Confirmado',
     },
     {
-      name: "Carlos Pereira",
-      hour: "13:30",
-      appoint: "Quadra de Basquete",
-      status: "Pendente",
+      name: 'Carlos Pereira',
+      hour: '13:30',
+      appoint: 'Quadra de Basquete',
+      status: 'Pendente',
     },
     {
-      name: "Ana Souza",
-      hour: "14:00",
-      appoint: "Quadra de Vôlei",
-      status: "Confirmado",
+      name: 'Ana Souza',
+      hour: '14:00',
+      appoint: 'Quadra de Vôlei',
+      status: 'Confirmado',
     },
     {
-      name: "Pedro Santos",
-      hour: "15:00",
-      appoint: "Quadra de Tênis",
-      status: "Cancelado",
+      name: 'Pedro Santos',
+      hour: '15:00',
+      appoint: 'Quadra de Tênis',
+      status: 'Cancelado',
     },
     {
-      name: "Fernanda Lima",
-      hour: "16:00",
-      appoint: "Quadra de Futebol",
-      status: "Confirmado",
+      name: 'Fernanda Lima',
+      hour: '16:00',
+      appoint: 'Quadra de Futebol',
+      status: 'Confirmado',
     },
   ];
   return (
